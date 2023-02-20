@@ -1,21 +1,23 @@
 .hero {
   color: var(--text-color);
-  padding: 150px 0 300px;
+  padding: 160px 0 230px;
 }
 
 .hero__content {
   text-align: center;
   max-width: 490px;
   width: 100%;
-font-family: "Tinos",serif;
 }
 
 .hero__title {
+  font-family: "Tinos",serif;
   font-weight: 400;
-  line-height: 1.2;
+  font-size: 80px;
+  color: var(--secondary-text-color);
+  margin-bottom: 12px;
+  line-height: 1;
   display: flex;
   flex-direction: column;
-  font-size: 80px;
 }
 
 .hero__title-top {
@@ -23,6 +25,20 @@ font-family: "Tinos",serif;
 }
 
 .hero__text {
+  font-size: 18px;
+  margin-bottom: 21px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+
+  &::before, &::after {
+    content: "";
+    display: inline-block;
+    width: 60px;
+    height: 2px;
+    background-color: var(--text-color);
+  }
 }
 
 .hero__link {

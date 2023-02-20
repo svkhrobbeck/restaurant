@@ -3,7 +3,10 @@
   --primary-bg-color: #fff;
   --secondary-bg-color: #ff7400;
   --text-color: #000;
-  
+  --text-grey: #2c2c2c;
+  --text-light-grey: #656363;
+  --text-brown: #bc9060;
+  --secondary-text-color: #d67e35;
 }
 
 /* GLOBAL */
@@ -42,6 +45,7 @@ body {
   font-family: "Open Sans", "Arial", sans-serif;
   font-size: 16px;
   line-height: 1.5;
+  font-weight: 400;
   color: var(--text-color);
   background-color: var(--primary-bg-color);
   display: flex;

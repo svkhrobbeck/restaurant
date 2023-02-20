@@ -1,0 +1,47 @@
+.categories {
+  transform: translateY(-108px);
+}
+
+.categories__inner {
+  display: flex;
+  gap: 30px;
+}
+
+.categories__card {
+  max-width: 350px;
+  width: 100%;
+  padding: 48px 24px 17px;
+  font-family: "Tinos", serif;
+  height: auto;
+  background-color: var(--primary-bg-color);
+  box-shadow: 10px 10px 40px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  font-size: 26px;
+}
+
+.categories__title {
+  line-height: normal;
+  font-weight: 400;
+  font-size: 26px;
+  color: var(--text-grey);
+  margin-bottom: 20px;
+  
+  &-inner {
+    color: var(--text-brown);
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    width: 87px;
+    height: 87px;
+    margin: 0 auto 4px;
+    background: url("../images/icon-food-pot.svg") no-repeat center / contain;
+  }
+}
+
+
+.categories__text {
+  color: var(--text-light-grey);
+  line-height: 1.2;
+}
