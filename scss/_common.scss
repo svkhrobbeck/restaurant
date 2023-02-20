@@ -1,7 +1,9 @@
 /* CUSTOM PROPS */
 :root {
   --primary-bg-color: #fff;
+  --secondary-bg-color: #ff7400;
   --text-color: #000;
+  
 }
 
 /* GLOBAL */
@@ -37,7 +39,7 @@ img {
 
 body {
   height: 100%;
-  font-family: "Arial", sans-serif;
+  font-family: "Open Sans", "Arial", sans-serif;
   font-size: 16px;
   line-height: 1.5;
   color: var(--text-color);
@@ -96,13 +98,11 @@ body {
   border: none;
   cursor: pointer;
   text-align: center;
+  white-space: nowrap;
   text-decoration: none;
+  background-color: var(--secondary-bg-color);
+  color: var(--text-color);
+  font-weight: 700;
+  font-size: 14px;
+  padding: 14px 18px;
 }
-
-/* RETINA BGS */
-@media only screen and (-webkit-min-device-pixel-ratio: 2),
-only screen and (min--moz-device-pixel-ratio: 2),
-only screen and (-o-min-device-pixel-ratio: 2/1),
-only screen and (min-device-pixel-ratio: 2),
-only screen and (min-resolution: 192dpi),
-only screen and (min-resolution: 2dppx) {}
