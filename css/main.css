@@ -759,4 +759,145 @@ body {
   font-size: 24px;
   line-height: normal;
   color: var(--text-color);
+}
+
+.foods {
+  padding: 130px 0 0;
+}
+
+.foods__title {
+  color: var(--text-color);
+  margin-bottom: 140px;
+  font-family: "Tinos", serif;
+  font-size: 54px;
+  font-weight: 400;
+  text-align: center;
+  transition: font-size 0.5s ease;
+}
+.foods__title-inner {
+  color: var(--secondary-text-color);
+}
+@media only screen and (max-width: 768px) {
+  .foods__title {
+    font-size: 48px;
+    margin-bottom: 110px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .foods__title {
+    font-size: 40px;
+    margin-bottom: 80px;
+  }
+}
+
+.foods__inner {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.foods__img {
+  display: block;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: auto;
+  min-height: 100%;
+}
+@media only screen and (max-width: 768px) {
+  .foods__img {
+    display: none;
+  }
+}
+
+.food__prices {
+  display: flex;
+  flex-direction: column;
+  row-gap: 29px;
+  width: 100%;
+}
+@media only screen and (max-width: 768px) {
+  .food__prices {
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .food__prices {
+    flex-direction: column;
+  }
+}
+
+.price-food {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+@media only screen and (max-width: 830px) {
+  .price-food {
+    flex-wrap: wrap;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .price-food {
+    max-width: 160px;
+    text-align: center;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .price-food {
+    flex-wrap: nowrap;
+    max-width: none;
+    justify-content: center;
+  }
+}
+
+.price-food__img {
+  width: 160px;
+  height: 140px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.price-food__text {
+  font-family: "Tinos", serif;
+  font-size: 26px;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 5px;
+  transition: font-size 0.5s ease;
+}
+@media only screen and (max-width: 992px) {
+  .price-food__text {
+    display: block;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .price-food__text {
+    width: auto;
+    font-size: 22px;
+  }
+}
+
+.price-food__text-inner {
+  white-space: nowrap;
+}
+@media only screen and (max-width: 992px) {
+  .price-food__text-inner {
+    white-space: normal;
+  }
+}
+
+.price-food__dashed-line {
+  display: inline-block;
+  max-width: 200px;
+  width: 100%;
+  border-bottom: 1px dashed #000;
+}
+@media only screen and (max-width: 992px) {
+  .price-food__dashed-line {
+    display: none;
+  }
 }/*# sourceMappingURL=main.css.map */

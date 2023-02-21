@@ -1,0 +1,127 @@
+.foods {
+  padding: 130px 0 0;
+}
+
+.foods__title {
+  color: var(--text-color);
+  margin-bottom: 140px;
+  font-family: "Tinos", serif;
+  font-size: 54px;
+  font-weight: 400;
+  text-align: center;
+  transition: font-size 0.5s ease;
+
+  &-inner {
+    color: var(--secondary-text-color);
+  }
+
+  @media only screen and (max-width: $tablet) {
+    font-size: 48px;
+    margin-bottom: 110px;
+  }
+
+  @media only screen and (max-width: $mobile) {
+    font-size: 40px;
+    margin-bottom: 80px;
+  }
+}
+
+.foods__inner {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.foods__img {
+  display: block;
+  object-fit: cover;
+  width: auto;
+  min-height: 100%;
+
+  @media only screen and (max-width: $tablet) {
+    display: none;
+  }
+}
+
+.food__prices {
+  display: flex;
+  flex-direction: column;
+  row-gap: 29px;
+  width: 100%;
+
+  @media only screen and (max-width: $tablet) {
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+  }
+
+  @media only screen and (max-width: $mobile) {
+    flex-direction: column;
+  }
+}
+
+.price-food {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+
+  @media only screen and (max-width: 830px) {
+    flex-wrap: wrap;
+  }
+
+  @media only screen and (max-width: $tablet) {
+    max-width: 160px;
+    text-align: center;
+  }
+
+  @media only screen and (max-width: $mobile) {
+    flex-wrap: nowrap;
+    max-width: none;
+    justify-content: center;
+  }
+}
+
+.price-food__img {
+  width: 160px;
+  height: 140px;
+  object-fit: contain;
+}
+
+.price-food__text {
+  font-family: "Tinos", serif;
+  font-size: 26px;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 5px;
+  transition: font-size 0.5s ease;
+
+  @media only screen and (max-width: $tablet-l) {
+    display: block;
+  }
+
+  @media only screen and (max-width: $mobile) {
+    width: auto;
+    font-size: 22px;
+  }
+}
+
+.price-food__text-inner {
+  white-space: nowrap;
+
+  @media only screen and (max-width: $tablet-l) {
+    white-space: normal;
+  }
+}
+
+.price-food__dashed-line {
+  display: inline-block;
+  max-width: 200px;
+  width: 100%;
+  border-bottom: 1px dashed #000;
+
+  @media only screen and (max-width: $tablet-l) {
+    display: none;
+  }
+}
