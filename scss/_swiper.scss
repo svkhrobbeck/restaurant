@@ -1,0 +1,59 @@
+.swiper {
+  position: relative;
+
+  * {
+    box-sizing: border-box;
+  }
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.swiper-button-prev {
+  outline: none;
+
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: var(--secondary-text-color);
+    border-radius: 50%;
+    position: absolute;
+  }
+
+  position: absolute;
+  left: 2%;
+  top: 55%;
+  z-index: 100px;
+
+  @media only screen and (max-width: $desktop) {
+    display: none;
+  }
+}
+
+.swiper-button-next {
+  outline: none;
+
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-color: var(--secondary-text-color);
+    border-radius: 50%;
+    position: absolute;
+  }
+
+  position: absolute;
+  right: 2%;
+  top: 55%;
+  z-index: 100px;
+
+  @media only screen and (max-width: $desktop) {
+    display: none;
+  }
+}

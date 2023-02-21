@@ -1,46 +1,55 @@
 /* FONTS */
 @font-face {
-  src: url('../fonts/open-sans-v34-latin-regular.woff2') format('woff2'), 
-  url('../fonts/open-sans-v34-latin-regular.woff') format('woff');
+  src: url("../fonts/open-sans-v34-latin-regular.woff2") format("woff2"),
+    url("../fonts/open-sans-v34-latin-regular.woff") format("woff");
   font-display: swap;
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
 }
 
 @font-face {
-  src: url('../fonts/open-sans-v34-latin-italic.woff2') format('woff2'), 
-  url('../fonts/open-sans-v34-latin-italic.woff') format('woff');
+  src: url("../fonts/open-sans-v34-latin-italic.woff2") format("woff2"),
+    url("../fonts/open-sans-v34-latin-italic.woff") format("woff");
   font-display: swap;
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-style: italic;
   font-weight: 400;
 }
 
 @font-face {
-  src: url('../fonts/open-sans-v34-latin-600.woff2') format('woff2'), 
-  url('../fonts/open-sans-v34-latin-600.woff') format('woff');
+  src: url("../fonts/open-sans-v34-latin-600.woff2") format("woff2"),
+    url("../fonts/open-sans-v34-latin-600.woff") format("woff");
   font-display: swap;
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 600;
 }
 
 @font-face {
-  src: url('../fonts/open-sans-v34-latin-700.woff2') format('woff2'), 
-  url('../fonts/open-sans-v34-latin-700.woff') format('woff');
+  src: url("../fonts/open-sans-v34-latin-700.woff2") format("woff2"),
+    url("../fonts/open-sans-v34-latin-700.woff") format("woff");
   font-display: swap;
-  font-family: 'Open Sans';
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: 700;
 }
 
 /* Tinos */
 @font-face {
-  src: url('../fonts/tinos-v24-latin-regular.woff2') format('woff2'), 
-  url('../fonts/tinos-v24-latin-regular.woff') format('woff');
-  font-display: swap; 
-  font-family: 'Tinos';
+  src: url("../fonts/tinos-v24-latin-regular.woff2") format("woff2"),
+    url("../fonts/tinos-v24-latin-regular.woff") format("woff");
+  font-display: swap;
+  font-family: "Tinos";
+  font-style: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  src: url("../fonts/cookie-v17-latin-regular.woff2") format("woff2"),
+    url("../fonts/cookie-v17-latin-regular.woff") format("woff");
+  font-display: swap;
+  font-family: "Cookie";
   font-style: normal;
   font-weight: 400;
 }

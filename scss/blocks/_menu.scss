@@ -1,0 +1,103 @@
+.menu {
+  background: url("../images/menu-bg.png") no-repeat center / cover;
+  // height: 100vh;
+  padding: 100px 0 230px;
+  position: relative;
+}
+
+.menu__title {
+  --text-color: #fff;
+  font-family: "Tinos", serif;
+  font-size: 54px;
+  font-weight: 400;
+  text-align: center;
+  text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
+  transition: font-size 0.5s ease;
+  margin-bottom: 140px;
+
+  &-inner {
+    color: var(--secondary-text-color);
+  }
+
+  @media only screen and (max-width: $tablet) {
+    font-size: 48px;
+    margin-bottom: 110px;
+  }
+
+  @media only screen and (max-width: $mobile) {
+    font-size: 40px;
+    margin-bottom: 80px;
+  }
+  text-align: center;
+  color: var(--text-color);
+}
+
+.card-menu {
+  max-width: 350px;
+  width: 100%;
+  background-color: #fff;
+  padding: 80px 62px 29px;
+}
+
+.card-menu__img-wrapper {
+  position: relative;
+  margin-bottom: 22px;
+}
+
+.card-menu__img {
+  max-width: 255px;
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+}
+
+.card-menu__price-text {
+  font-family: "Cookie", serif;
+  background-color: var(--secondary-text-color);
+  color: #fff;
+  font-size: 30px;
+  line-height: 1.1;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100px;
+  height: 100px;
+  border: 7px solid #fff;
+  border-radius: 50%;
+}
+
+.menu-card__content {
+  text-align: center;
+}
+
+.menu-card__name {
+  font-family: "Tinos", serif;
+  font-weight: 400;
+  margin-bottom: 17px;
+  font-size: 26px;
+  line-height: 1.1;
+
+  @media only screen and (max-width: $mobile) {
+    font-size: 22px;
+  }
+}
+
+.menu-card__type {
+  margin-bottom: 18px;
+  font-size: 16px;
+  line-height: normal;
+}
+
+.menu-card__link {
+  display: inline-block;
+  cursor: pointer;
+  white-space: nowrap;
+  padding: 14px 68px;
+  background-color: var(--secondary-text-color);
+  color: #fff;
+  font-weight: 700;
+  font-size: 16px;
+}
