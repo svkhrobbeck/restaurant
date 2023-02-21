@@ -34,8 +34,15 @@
           <!-- /LOGO -->
 
           <div class="site-header__right">
+            <button class="sitenav-toggler" data-sitenav-toggler>
+              <span class="sitenav__toggler-inner"></span>
+              <span class="sitenav__toggler-inner"></span>
+              <span class="sitenav__toggler-inner"></span>
+            </button>
+            <!-- SITENAV TOGGLER -->
+            <!-- /SITENAV TOGGLER -->
             <!-- SITENAV -->
-            <nav class="sitenav">
+            <nav class="sitenav" data-sitenav>
               <ul class="sitenav__list">
                 <li class="sitenav__item">
                   <a class="sitenav__link" href="#">ГЛАВНАЯ</a>
@@ -143,7 +150,7 @@
       <!-- ABOUT -->
       <section class="about">
         <div class="container">
-          <div class="about__inner">
+          <div class="about__top">
             <div class="about__content">
               <h2 class="about__title">
                 Наша <span class="about__title-inner">История</span>
@@ -182,6 +189,21 @@
             </div>
           </div>
         </div>
+        <div class="about__bottom">
+          <div class="container">
+            <div class="about__bottom-inner">
+              <div class="about__bottom-content">
+                <h3 class="about__bottom-title">
+                  Отпразднуйте в одном из самых лучших ресторанов.
+                </h3>
+                <p class="about__bottom-text">
+                  Только в этом месяце бизнес-ланч от 250 ₽
+                </p>
+              </div>
+              <a class="about__bottom-btn button" href="#">ЗАКАЗ СТОЛИКА</a>
+            </div>
+          </div>
+        </div>
       </section>
       <!-- /ABOUT -->
     </main>
@@ -191,6 +213,6 @@
     <!-- /FOOTER -->
 
     <!-- SCRIPTS -->
-    <!-- <script src="js/main.js"></script> -->
+    <script src="js/main.js"></script>
   </body>
 </html>

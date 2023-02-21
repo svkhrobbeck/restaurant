@@ -1,4 +1,5 @@
 .hero {
+  --text-color: #fff;
   color: var(--text-color);
   padding: 160px 0 230px;
 }
@@ -7,10 +8,15 @@
   text-align: center;
   max-width: 490px;
   width: 100%;
+
+  @media only screen and (max-width: $tablet-l) {
+    max-width: none;
+    margin: 0 auto;
+  }
 }
 
 .hero__title {
-  font-family: "Tinos",serif;
+  font-family: "Tinos", serif;
   font-weight: 400;
   font-size: 80px;
   color: var(--secondary-text-color);
@@ -18,10 +24,28 @@
   line-height: 1;
   display: flex;
   flex-direction: column;
+  transition: font-size 0.5s ease;
+
+  @media only screen and (max-width: $tablet) {
+    font-size: 58px;
+  }
+
+  @media only screen and (max-width: $mobile) {
+    font-size: 40px;
+  }
 }
 
 .hero__title-top {
   font-size: 50px;
+  transition: font-size 0.5s ease;
+
+  @media only screen and (max-width: $tablet) {
+    font-size: 42px;
+  }
+
+  @media only screen and (max-width: $mobile) {
+    font-size: 30px;
+  }
 }
 
 .hero__text {
@@ -30,19 +54,28 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  color: var(--text-color);
   gap: 9px;
+  transition: font-size 0.5s ease;
 
-  &::before, &::after {
+  &::before,
+  &::after {
     content: "";
     display: inline-block;
     width: 60px;
     height: 2px;
     background-color: var(--text-color);
+
+    @media only screen and (max-width: $mobile) {
+      display: none;
+    }
   }
-}
 
-.hero__link {
-}
+  @media only screen and (max-width: $tablet) {
+    font-size: 17px;
+  }
 
-.button {
+  @media only screen and (max-width: $mobile) {
+    font-size: 15px;
+  }
 }

@@ -5,6 +5,11 @@
 .categories__inner {
   display: flex;
   gap: 30px;
+
+  @media only screen and (max-width: $tablet-l) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 .categories__card {
@@ -17,6 +22,11 @@
   box-shadow: 10px 10px 40px 20px rgba(0, 0, 0, 0.1);
   text-align: center;
   font-size: 26px;
+  transition: font-size 0.5s ease;
+
+  @media only screen and (max-width: $mobile) {
+    font-size: 22px;
+  }
 }
 
 .categories__title {
@@ -25,7 +35,7 @@
   font-size: 26px;
   color: var(--text-grey);
   margin-bottom: 20px;
-  
+
   &-inner {
     color: var(--text-brown);
   }
@@ -39,7 +49,6 @@
     background: url("../images/icon-food-pot.svg") no-repeat center / contain;
   }
 }
-
 
 .categories__text {
   color: var(--text-light-grey);
