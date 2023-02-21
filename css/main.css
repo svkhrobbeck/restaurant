@@ -795,6 +795,12 @@ body {
   align-items: flex-start;
   gap: 30px;
 }
+@media only screen and (max-width: 768px) {
+  .foods__inner {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
 
 .foods__img {
   display: block;
@@ -802,11 +808,6 @@ body {
      object-fit: cover;
   width: auto;
   min-height: 100%;
-}
-@media only screen and (max-width: 768px) {
-  .foods__img {
-    display: none;
-  }
 }
 
 .food__prices {
