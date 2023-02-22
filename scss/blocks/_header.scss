@@ -1,5 +1,7 @@
 /* HEADER */
 .site-header {
+  min-height: 100vh;
+  max-height: 100vh;
   --text-color: #fff;
   background: url("../images/hero-bg.png") no-repeat center / cover fixed;
 
