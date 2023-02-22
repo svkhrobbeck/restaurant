@@ -229,7 +229,7 @@ body {
   min-height: 100vh;
   max-height: 100vh;
   --text-color: #fff;
-  background: url("../images/hero-bg.png") no-repeat center/cover fixed;
+  background: #000 url("../images/hero-bg.png") no-repeat center/cover fixed;
 }
 @media only screen and (max-width: 576px) {
   .site-header {
