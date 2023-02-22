@@ -3,27 +3,8 @@
 }
 
 .foods__title {
-  color: var(--text-color);
+  @include block-title;
   margin-bottom: 140px;
-  font-family: "Tinos", serif;
-  font-size: 54px;
-  font-weight: 400;
-  text-align: center;
-  transition: font-size 0.5s ease;
-
-  &-inner {
-    color: var(--secondary-text-color);
-  }
-
-  @media only screen and (max-width: $tablet) {
-    font-size: 48px;
-    margin-bottom: 110px;
-  }
-
-  @media only screen and (max-width: $mobile) {
-    font-size: 40px;
-    margin-bottom: 80px;
-  }
 }
 
 .foods__inner {

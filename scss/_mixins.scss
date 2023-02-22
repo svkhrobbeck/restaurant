@@ -1,0 +1,44 @@
+@mixin menu-title {
+  --text-color: #fff;
+  font-family: "Tinos", serif;
+  font-size: 54px;
+  font-weight: 400;
+  text-align: center;
+  text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.25);
+  color: var(--text-color);
+  transition: font-size 0.5s ease;
+  margin-bottom: 140px;
+
+  @media only screen and (max-width: $tablet) {
+    font-size: 48px;
+    margin-bottom: 110px;
+  }
+
+  @media only screen and (max-width: $mobile) {
+    font-size: 40px;
+    margin-bottom: 80px;
+  }
+}
+
+@mixin block-title {
+  --text-color: #000;
+  color: var(--text-color);
+  font-size: 54px;
+  line-height: normal;
+  font-weight: 400;
+  font-family: "Tinos", serif;
+  text-align: center;
+  transition: font-size 0.5s ease;
+
+  &-inner {
+    color: var(--secondary-text-color);
+  }
+
+  @media only screen and (max-width: $tablet) {
+    font-size: 48px;
+  }
+
+  @media only screen and (max-width: $mobile) {
+    font-size: 40px;
+  }
+}

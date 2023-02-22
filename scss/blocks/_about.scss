@@ -32,27 +32,8 @@
 }
 
 .about__title {
-  --text-color: #000;
-  color: var(--text-color);
-  font-size: 54px;
-  line-height: normal;
-  font-weight: 400;
-  font-family: "Tinos", serif;
+  @include block-title;
   margin-bottom: 21px;
-  text-align: center;
-  transition: font-size 0.5s ease;
-
-  &-inner {
-    color: var(--secondary-text-color);
-  }
-
-  @media only screen and (max-width: $tablet) {
-    font-size: 48px;
-  }
-
-  @media only screen and (max-width: $mobile) {
-    font-size: 40px;
-  }
 }
 
 .about__desc {

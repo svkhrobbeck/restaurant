@@ -1,0 +1,14 @@
+.cookers {
+  padding: 100px 0 0;
+}
+
+.cookers__title {
+  @include block-title;
+  margin-bottom: 105px;
+}
+
+.cookers__image {
+  max-width: 350px;
+  width: 100%;
+  height: auto;
+}
