@@ -24,8 +24,16 @@
   font-size: 26px;
   transition: font-size 0.5s ease, transform 0.5s ease;
 
-  &:hover {
-    transform: translate(0, -30px);
+  @media only screen and (min-width: $tablet-l) {
+    &:hover {
+      transform: translate(0, -30px);
+    }
+  }
+
+  @media only screen and (max-width: $tablet-l) {
+    &:hover {
+      transform: scale(1.03);
+    }
   }
 
   @media only screen and (max-width: $mobile) {

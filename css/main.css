@@ -633,8 +633,15 @@ body {
   font-size: 26px;
   transition: font-size 0.5s ease, transform 0.5s ease;
 }
-.categories__card:hover {
-  transform: translate(0, -30px);
+@media only screen and (min-width: 992px) {
+  .categories__card:hover {
+    transform: translate(0, -30px);
+  }
+}
+@media only screen and (max-width: 992px) {
+  .categories__card:hover {
+    transform: scale(1.03);
+  }
 }
 @media only screen and (max-width: 576px) {
   .categories__card {
