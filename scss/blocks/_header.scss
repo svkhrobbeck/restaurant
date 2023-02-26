@@ -103,7 +103,7 @@
         position: absolute;
 
         &:first-child {
-          transform: rotateZ(45deg);
+          transform: rotateZ(135deg);
         }
 
         &:nth-child(2) {
@@ -111,7 +111,7 @@
         }
 
         &:last-child {
-          transform: rotateZ(-45deg);
+          transform: rotateZ(-135deg);
         }
       }
     }
