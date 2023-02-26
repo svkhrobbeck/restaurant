@@ -22,7 +22,11 @@
   box-shadow: 10px 10px 40px 20px rgba(0, 0, 0, 0.1);
   text-align: center;
   font-size: 26px;
-  transition: font-size 0.5s ease;
+  transition: font-size 0.5s ease, transform 0.5s ease;
+
+  &:hover {
+    transform: translate(0, -30px);
+  }
 
   @media only screen and (max-width: $mobile) {
     font-size: 22px;

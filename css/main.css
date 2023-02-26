@@ -155,6 +155,13 @@ body {
   font-weight: 700;
   font-size: 14px;
   padding: 14px 18px;
+  transition: opacity 0.5s ease;
+}
+.button:hover {
+  opacity: 0.8;
+}
+.button:active {
+  opacity: 0.6;
 }
 
 /* CONTAINER */
@@ -182,7 +189,7 @@ body {
   outline: none;
   position: absolute;
   left: 2%;
-  top: 55%;
+  top: calc(50% - 20px);
   z-index: 100px;
 }
 .swiper-button-prev::after {
@@ -193,7 +200,6 @@ body {
   background-color: var(--secondary-text-color);
   border-radius: 50%;
   position: absolute;
-  box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.5);
 }
 @media only screen and (max-width: 1240px) {
   .swiper-button-prev {
@@ -205,7 +211,7 @@ body {
   outline: none;
   position: absolute;
   right: 2%;
-  top: 55%;
+  top: calc(50% - 20px);
   z-index: 100px;
 }
 .swiper-button-next::after {
@@ -216,7 +222,6 @@ body {
   background-color: var(--secondary-text-color);
   border-radius: 50%;
   position: absolute;
-  box-shadow: 0px 0px 20px 2px rgba(0, 0, 0, 0.5);
 }
 @media only screen and (max-width: 1240px) {
   .swiper-button-next {
@@ -264,6 +269,13 @@ body {
 .logo {
   margin: 0;
   padding: 0;
+  transition: opacity 0.5s ease;
+}
+.logo:hover {
+  opacity: 0.8;
+}
+.logo:active {
+  opacity: 0.6;
 }
 
 .logo__link {
@@ -395,6 +407,31 @@ body {
   font-weight: 700;
   font-size: 14px;
   color: var(--text-color);
+  position: relative;
+  transition: opacity 0.5s ease;
+}
+.sitenav__link:hover::before {
+  opacity: 1;
+  transform: scale(1);
+  transform-origin: right;
+}
+.sitenav__link:active {
+  opacity: 0.8;
+}
+@media only screen and (min-width: 576px) {
+  .sitenav__link::before {
+    content: "";
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    height: 2px;
+    background-color: var(--secondary-bg-color);
+    bottom: -3px;
+    opacity: 0;
+    transform: scale(0);
+    transform-origin: left;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+  }
 }
 @media only screen and (max-width: 768px) {
   .sitenav__link {
@@ -594,7 +631,10 @@ body {
   box-shadow: 10px 10px 40px 20px rgba(0, 0, 0, 0.1);
   text-align: center;
   font-size: 26px;
-  transition: font-size 0.5s ease;
+  transition: font-size 0.5s ease, transform 0.5s ease;
+}
+.categories__card:hover {
+  transform: translate(0, -30px);
 }
 @media only screen and (max-width: 576px) {
   .categories__card {
