@@ -1,10 +1,3 @@
-// const elSiteNavToggler = document.querySelector("[data-sitenav-toggler]");
-
-document.addEventListener("click", (evt) => {
-  SiteNavToggle(evt);
-  siteNavOutsideClick(evt);
-});
-
 // Click SitenavToggle
 function SiteNavToggle(evt) {
   const el = evt.target.closest("[data-sitenav-toggler]");
@@ -15,16 +8,11 @@ function SiteNavToggle(evt) {
 }
 
 function siteNavOutsideClick(evt) {
-  if (
-    evt.target.closest("[data-sitenav]") ||
-    evt.target.closest("[data-sitenav-toggler]")
-  )
-    return;
+  if (evt.target.closest("[data-sitenav]") || evt.target.closest("[data-sitenav-toggler]")) return;
 
   document.querySelector("[data-sitenav-toggler]").classList.remove("show");
 }
 
-// Swiper
 const swiper = new Swiper(".swiper", {
   direction: "horizontal",
   slidesPerView: 1,
@@ -53,4 +41,10 @@ const swiper = new Swiper(".swiper", {
       spaceBetween: 20,
     },
   },
+});
+
+// click event
+document.addEventListener("click", evt => {
+  SiteNavToggle(evt);
+  siteNavOutsideClick(evt);
 });
